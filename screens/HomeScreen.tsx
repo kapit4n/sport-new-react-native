@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '../components/EditScreenInfo';
+import SportNewsList from '../components/SportNewsList';
 import { Text, View } from '../components/Themed';
 
 export default function HomeScreen() {
@@ -9,7 +9,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Home</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/HomeScreen.tsx" />
+      <SportNewsList />
     </View>
   );
 }
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   separator: {
-    marginVertical: 30,
+    marginVertical: 10,
     height: 1,
     width: '80%',
   },
