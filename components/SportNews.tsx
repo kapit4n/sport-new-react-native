@@ -1,10 +1,14 @@
-import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
-import { StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { StyleSheet, Image, Button } from 'react-native';
 
 import { Text, View } from './Themed';
 
 export default function SportNews({ data }: { data: any }) {
+
+  const navigateToDetails = () => {
+
+  }
+
   return (
     <View style={styles.cardViewContainer}>
       <Image style={styles.image}
@@ -15,6 +19,7 @@ export default function SportNews({ data }: { data: any }) {
           {data.title}
         </Text>
       </View>
+      <Button title="Read More" onPress={navigateToDetails} />
     </View>
   );
 }
